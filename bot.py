@@ -4,8 +4,8 @@ import random
 # Credenciales del bot
 intents = discord.Intents.default()
 intents.message_content = True
-bot_token = "MTIyOTgzMTgwNDYyMjYwNjQxNg.GCZf8w.RcUGHq4dtU6wZHtCHdPpUakpj7SqeIN9nVTr88"
-
+with open('token.txt', 'r') as f:
+    bot_token = f.read().strip()
 # Canal de bienvenida (opcional)
 channel_id = 1229877128083017850
 
