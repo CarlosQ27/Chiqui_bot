@@ -76,7 +76,7 @@ async def on_message(message):
     if message.content.lower() == 'chiqui bot ayudame':
         # Envía una respuesta con saludo aleatorio
         random_greeting = random.choice(greetings)
-        await message.channel.send(f'{random_greeting}, matese', reference=message)
+        await message.channel.send(f'{random_greeting}', reference=message)
         print(f'Respondió a '{message.content}' con '{random_greeting}' en el canal: {message.channel.name}')
 
 
